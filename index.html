@@ -1,6 +1,72 @@
-index.html        the pages
-css/style.css     colors, fonts, layout
-js/main.js        cart, checkout form, galleries, menu
-images/           your logo and product photos, named after each product
-videos/           the clip video
-README.md         notes on what to edit
+
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MERE BRACELET | Official</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#111}
+nav{display:flex;gap:22px;padding:18px 40px;font-size:14px;opacity:.8}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:50px 60px;max-width:1150px;margin:auto}
+.hero h1{font-family:'Instrument Serif',serif;font-size:58px;line-height:1.1;max-width:380px;font-weight:400}
+.hero p{margin:18px 0 28px;opacity:.6;line-height:1.6;max-width:380px;font-size:15px}
+.btn{display:inline-block;padding:12px 22px;border-radius:30px;text-decoration:none;font-size:14px;font-weight:500}
+.btn-black{background:#111;color:#fff}
+.btn-light{background:#f5f2ef;color:#111;margin-left:10px}
+.logo-box{width:380px;height:380px;background:radial-gradient(#ffeef3,#fff);border-radius:20px;display:flex;align-items:center;justify-content:center;position:relative;border:1px solid #f5d6dc}
+.logo-inner{width:280px;height:280px;border:2px solid #b48a4c;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.7)}
+.logo-inner b{font-family:'Instrument Serif',serif;font-size:90px;font-weight:400;line-height:1}
+.logo-inner span{font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;margin-top:5px}
+.section{max-width:1150px;margin:40px auto;padding:0 60px}
+.section h2{font-family:'Instrument Serif',serif;font-size:32px;margin-bottom:18px;font-weight:400}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{background:#faf8f6;border:1px solid #eee;border-radius:12px;padding:18px}
+.price-card h3{font-family:'Instrument Serif',serif;font-size:20px;font-weight:400}
+.price-card p{font-size:13px;opacity:.6;margin-top:6px}
+footer{text-align:center;padding:50px;opacity:.6;font-size:13px;background:#faf8f6;margin-top:60px}
+@media(max-width:800px){.hero{flex-direction:column;padding:30px 20px}.logo-box{width:300px;height:300px;margin-top:30px}.section{padding:0 20px}.price-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><span>Bracelets</span><span>Phone charms</span><span>Clips</span><span>Shop by price</span><span>Size guide</span></nav>
+
+<div class="hero">
+<div>
+<h1>Bracelets made to be worn every day.</h1>
+<p>Chain, pearl, charm and cuff styles you can stack, gift, or keep for yourself.</p>
+<a href="#price" class="btn btn-black">Shop bracelets</a>
+<a href="#" class="btn btn-light">Find your size</a>
+</div>
+<div class="logo-box">
+<div class="logo-inner"><b>MB</b><span>Mere As A Bracelet</span></div>
+</div>
+</div>
+
+<div class="section" id="price">
+<h2>Shop by price</h2>
+<div class="price-grid">
+<div class="price-card"><h3>Under Rs. 500</h3><p>Small gifts and daily wear</p></div>
+<div class="price-card"><h3>Under Rs. 1,000</h3><p>Our most popular range</p></div>
+<div class="price-card"><h3>Under Rs. 2,000</h3><p>Layered and statement pieces</p></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Shop by category</h2>
+<div class="price-grid">
+<div class="price-card"><h3>✨ Pearl Bracelets</h3><p>Rs. 650 - Elegant daily</p></div>
+<div class="price-card"><h3>🌙 Charm Bracelets</h3><p>Rs. 750 - Trendy stack</p></div>
+<div class="price-card"><h3>🧵 Thread Bracelets</h3><p>Rs. 550 - Minimal</p></div>
+</div>
+</div>
+
+<footer>
+Instagram: @mere.bracelet | WhatsApp: 0322-2324095 | Email: merebracelet@gmail.com<br><br>
+© 2026 MERE BRACELET - Crafted by Sidra Afaq - Karachi, Pakistan<br>
+Delivery all over Pakistan
+</footer>
+</body>
+</html>
